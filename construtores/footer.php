@@ -6,7 +6,7 @@
             <p>Página gerada às <?php echo date('H') . ':' . date('i'); ?></p>
         </div>
     </footer>
-
+<script src="../js/menu.js"></script>
 </body>
 
 </html>
