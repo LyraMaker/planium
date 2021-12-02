@@ -17,7 +17,7 @@
     <header>
     <nav class="navbar">
   <div class="navbar-brand  has-background-info ">
-    <a class="navbar-item has-text-white">
+    <a href="index.php" class="navbar-item has-text-white">
       <strong>DESAFIO PLANIUM</strong>
     </a>
 
@@ -30,11 +30,11 @@
 
   <div class="navbar-menu has-background-white">
     <div class="navbar-end">
-      <a class="navbar-item">
+      <a href="index.php?id=a" class="navbar-item">
         Carregar Dados
       </a>
 
-      <a class="navbar-item">
+      <a href="index.php?id=b" class="navbar-item">
         Visualizar Dados
       </a>
 
