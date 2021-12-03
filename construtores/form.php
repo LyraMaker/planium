@@ -1,7 +1,9 @@
+<?php include "carregar.php"?>
 <h1 class="has-text-centered title">Registro</h1>
 <div id="alerts" class="p-3"></div>
 <form>
     <div class="field is-horizontal">
+        <?php tablePlan($jsonPlan); ?>
         <fieldset id="fieldQnt" class="field-body">
 
             <div class="field">
