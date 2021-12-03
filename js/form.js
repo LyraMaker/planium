@@ -4,24 +4,17 @@ btnPlus = document.querySelector("#plus");
 btnMinus = document.querySelector("#minus");
 
 // Área de Event Listener
+
+
+var posi = 0;
 btnPlus.addEventListener("click", function (event) {
-  event.preventDefault();
+ event.preventDefault;
+posi++;
+ let teste = document.querySelector("#benForm");
 
-  let fieldBen = document.querySelector("#fieldBen");
-  let alerts = document.querySelector("#alerts");
+ table = "<fieldset id='ben["+posi+"]'><div class='field is-horizontal'><div class='field'><p class='control is-expanded has-icons-left'><input class='input' name='{ben["+posi+"]["+'nome'+"]}' id='nome' type='text' placeholder='Seu nome' required><span class='icon is-small is-left'><i class='fa fa-user'></i></span></p></div><div class='field'><p class='control is-expanded has-icons-left'><input class='input' name='{ben["+posi+"]["+'idade'+"]}' id='idade' type='number' placeholder='Digite sua Idade' required><span class='icon is-small is-left'><i class='fa fa-birthday-cake'></i></span></p></div><div class='field'> <p class='control is-expanded has-icons-left'><input class='input' name='{ben["+posi+"]["+'"registro"'+"]}' id='registro' type='text' placeholder='Registro do plano' required><span class='icon is-small is-left'><i class='fa fa-file'></i></span></p></div></div></div></fieldset>";
 
-  txtQuantidade = parseInt(document.querySelector("#quantidade").value);
-  if ((txtQuantidade > 0) && txtQuantidade != NaN) fieldBen.disabled = false;
-  else {
-    alerts.innerHTML =
-      "<div class='notification is-danger'><button class='delete'></button><p>A quantidade não pode ser <strong>nula ou menor do que 0</strong>!<br>Digite um valor.</div>";
-
-    let btnClose = document.querySelector(".delete");
-
-    btnClose.addEventListener("click", function () {
-      this.parentElement.style.display = "none";
-    });
-  }
+ teste.innerHTML+=table;
 });
 
 //Área de funções
