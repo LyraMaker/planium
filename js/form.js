@@ -10,8 +10,8 @@ btnPlus.addEventListener("click", function (event) {
   let fieldBen = document.querySelector("#fieldBen");
   let alerts = document.querySelector("#alerts");
 
-  txtQuantidade = parseInt(document.querySelector("#quantidade").textContent);
-  if (txtQuantidade <= 0) fieldBen.disabled = false;
+  txtQuantidade = parseInt(document.querySelector("#quantidade").value);
+  if ((txtQuantidade > 0) && txtQuantidade != NaN) fieldBen.disabled = false;
   else {
     alerts.innerHTML =
       "<div class='notification is-danger'><button class='delete'></button><p>A quantidade não pode ser <strong>nula ou menor do que 0</strong>!<br>Digite um valor.</div>";
