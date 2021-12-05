@@ -19,20 +19,21 @@
     <div>
         <?php tablePlan($jsonPlan); ?>
     </div>
-    <form action="salvar.php" method="get">
+    <form method="POST">
     <div id="benForm">
 
     </div>
 
 
         <div class="control is-flex is-justify-content-center">
-            <button class="button is-primary">
+            <a class="button is-primary" onclick="captura()">
                 <span class="icon is-small is-left">
                     <i class="fa fa-pencil"></i>
                 </span>
                 <strong> Gerar registro</strong>
-            </button>
+            </a>
         </div>
+        
    
 </form>
     </div>

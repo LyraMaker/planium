@@ -16,3 +16,4 @@ function tablePlan($jsonPlan){
     echo "
     </table>";
 }
+
